@@ -39,19 +39,37 @@ export default function Index(){
         
     
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
         {/* Content */}
         <div className=" p-4">
-        <img className="h-8 w-auto ml-10" src="../lovelight.svg"></img>
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
         </div>
         <div className=" p-4">
-        <img className="h-8 w-auto ml-10" src="../lovelight.svg"></img>
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
         </div>
         <div className=" p-4">
-          <p>We offer unmatched levels of quality and service to provide our customers beautifully furnished spaces they love.
-            Our team draws on a wealth of industry experience to deliver a new standard of excellence – right from sourcing and selecting the best materials from around the world, through to product innovation and customer service delivery.
-            At every stage, we listen to the needs of our customers, and tailor our services to perfectly fit their unique requirements.
-            </p>
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
+        </div>
+        <div className=" p-4">
+          <p>We have a wealth of experience in designing and delivering window furnishings for both residential and commercial projects. Speak to us about finding the product that’s right for you.</p>
         </div>
         
     

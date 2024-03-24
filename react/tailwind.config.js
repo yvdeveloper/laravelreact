@@ -2,12 +2,13 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,js, ts,jsx,tsx}",
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {
       colors: {
+        'bg-body-dark': '#000'
       },
     },
   },

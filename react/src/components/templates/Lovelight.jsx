@@ -19,25 +19,32 @@ export default function Lovelight() {
   
   const Header = () => {
     return (<header
-      className={`fixed w-full justify-center z-20 ${isScrolled ? 'shadow-md py-2' : 'bg-blend-hue bg-cover bg-center h-96'}`}
+      className={` w-full justify-center z-20 ${isScrolled ? 'shadow-md py-2 lg:fixed h-16' : 'relative bg-blend-hue bg-cover bg-center h-96'}`}
       style={{
         backgroundImage: isScrolled ? 'none' : `url('../bg-1.jpg')`,
         backgroundColor: isScrolled ? '#000' : 'transparent' 
         }}
         >
-      <div className={`bg-black ${isScrolled? 'flex justify-center items-center' :'h-full bottom-0  bg-opacity-50'}`}>      
-        <button className="flex lg:hidden text-white " onClick={toggleMenu}>
+      <div className={`bg-black ${isScrolled? 'flex ' :'h-full bottom-0  bg-opacity-50'}`}>      
+        <button className="flex lg:hidden text-white p-4" onClick={toggleMenu}>
           {isMenuOpen ? 
           'Hi' : <GiHamburgerMenu />}
           
         </button>
-        <div className={`${isScrolled ? 'mr-auto': 'container mx-auto flex py-4 justify-center'}`}>
-            <img className="h-8 w-auto ml-10" src="../lovelight.svg"></img>
+        <div className={`${isScrolled ? '': 'container mx-auto flex py-4 justify-center'}`}>
+            <img className="w-auto absolute bottom-[30%]" src="../lovelight.svg"
+            style={{
+              maxHeight: isScrolled ? '40%' : 'auto',
+              marginLeft: isScrolled ? '20px' : 'auto'
+            }}
+            />
         </div>
         
-        <nav className={`sm:hidden text-white text-sm ${isScrolled? 'mr-[30%]' : ''}`}>
-            <div className="container mx-auto px-4 py-2 flex justify-center">
-            <ul className="flex space-x-4">
+        <nav className={`lg:flex xs:hidden max-xs:hidden md:hidden sm:hidden text-white text-sm ${isScrolled? 'mr-[30%]' : ''}`}>
+            <div className="container mx-auto px-4 py-2 flex justify-center max-w-[100%] bottom-[15%]"
+            style={{position:'absolute'}}
+            >
+            <ul className="flex space-x-4 ">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Services</a></li>
@@ -65,7 +72,7 @@ export default function Lovelight() {
 
     <> 
       <Header/>
-      <main className="fixed h-auto w-full" style={{marginTop: isScrolled ? '52px' : '384px'}}>
+      <main className={`h-auto w-full ${isScrolled ? 'absolute mt-[23%]':''}`}>
         <Outlet/>
       </main>
     </>

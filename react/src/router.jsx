@@ -17,6 +17,10 @@ const router = createBrowserRouter([
         element: <Lovelight/>,
         children: [
             {
+                path: '/',
+                element:<Navigate to="/index"/>
+            },
+            {
                 path: '/index',
                 element:<Index/>
             }
@@ -56,6 +60,7 @@ const router = createBrowserRouter([
         path:'/',
         element: <GuestLayout/>,
         children: [
+            
             {
                 path: '/index',
                 element:<Index/>
